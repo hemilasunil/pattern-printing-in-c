@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+
+void printPattern(int base, int N)
+{
+    int i,j;
+  for(i=1;i<=N;i++)
+  {
+      for(j=i;j>0;j--)
+      {
+          printf("%d ",base);
+      }
+      printf("\n");
+      base++;
+  }
+  base=base-1;
+  for(i=N;i>0;i--)
+  {
+      for(j=i;j>0;j--)
+      {
+          printf("%d ",base);
+      }
+      printf("\n");
+      base--;
+     
+  }
+}
+
+int main()
+{
+    int start,N;
+    scanf("%d %d",&start,&N);
+    printPattern(start,N);
+    return 0;
+}
+
