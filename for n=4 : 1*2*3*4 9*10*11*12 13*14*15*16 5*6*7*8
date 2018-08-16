@@ -1,0 +1,48 @@
+#include <iostream>
+ 
+using namespace std;
+
+int main(int argc, char** argv)
+{
+ int n,c;
+ cin>>n;
+ int i,j,k,l;
+ for(i=0;i<n;i+=2)
+ {
+     c=(i*n)+1;
+     for(j=1;j<2*n;j++)
+     {
+         if(j%2!=0)
+         {
+             cout<<c++;
+         }
+         else
+         {
+             cout<<"*";
+         }
+         
+     }
+     cout<<"\n";
+ }
+     if(n%2!=0)
+      k=n-2;
+     else
+      k=n-1;
+      for(i=k;i>=1;i-=2)
+     {
+         c=(i*n)+1;
+         for(j=1;j<2*n;j++)
+         {
+             if(j%2!=0)
+             {
+                 cout<<c++;
+             }
+             else
+             {
+                 cout<<"*";
+             }
+         }
+         cout<<"\n";
+     }
+ 
+}
